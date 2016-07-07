@@ -8,9 +8,9 @@ export default function pokemonService ($http, apiUrl) {
       .get(`${apiUrl}/pokemon`)
       .then(r => r.data);
     },
-    add(image) {
+    add(pokemon) {
       return $http
-      .post(`${apiUrl}/pokemon`, image)
+      .post(`${apiUrl}/pokemon`, pokemon)
       .then(r => r.data);
     }
   };

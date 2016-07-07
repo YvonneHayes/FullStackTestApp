@@ -3,7 +3,7 @@ import styles from './newPokemon.scss';
 
 export default {
   template,
-  controllerAs: 'newpokemon',
+  controllerAs: 'newPokemon',
   bindings: {
     add: '&'
   },
@@ -15,11 +15,12 @@ controller.inject = ['pokemonService'];
 function controller (pokemonService) {
   pokemonService.get()
     .then(pokemons => {
-      this.games = pokemons;
+      this.pokemons = pokemons;
     });
   this.styles = styles;
   this.submit = () => {
     let pokemon = this.pokemon;
+    console.log(pokemon, 'submit says this');
     this.add({pokemon});
     this.pokemon = {};
   };
