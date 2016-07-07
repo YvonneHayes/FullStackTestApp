@@ -1,0 +1,15 @@
+<section>
+  <div ng-class="tile.styles.div">
+      <section ng-class="tile.styles.tile" ng-repeat="pokemon in tile.data">
+        <h4>{{pokemon.name}}</h4>
+
+        <img ng-class="tile.styles.pokemon" title=" Name:{{pokemon.name}}" src="{{pokemon.url}}">
+        <ul>
+          <li>Name: {{pokemon.name}}</li>
+          <li>Type: {{pokemon.type}}</li>
+          <li>Place Caught: {{pokemon.location}}</li>
+        </ul>
+
+      </section>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+<section>
+  <div ng-class="list.styles.div">
+
+    <ul ng-class="list.styles.unordered">
+      <li ng-repeat="pokemon in list.data" ng-class="list.styles.items">
+        <a href="{{pokemon.url}}">{{pokemon.name}}</a>
+        <br>{{pokemon.type}}<br>
+        <br>{{pokemon.location}}<br>
+      </li>
+    </ul>
+</div>
+</section>

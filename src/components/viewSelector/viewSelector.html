@@ -1,0 +1,15 @@
+<section>
+  <nav>
+    Choose your display:&nbsp;
+    <input id="list" type="radio" ng-model="viewSelector.view" value="list">
+    <label for="list">List</label>
+    <input id="tile" type="radio" ng-model="viewSelector.view" value="tile">
+    <label for="tile">Tile</label>
+  </nav>
+  <section id="pokemons">
+    <list ng-if="(viewSelector.view === 'list')" data="viewSelector.pokemons" delete-pokemon="viewSelector.deletepokemon(id)"></list>
+    <tile ng-if="(viewSelector.view === 'tile')" data="viewSelector.pokemons"></tile>
+    <hr>
+    <new-pokemon add="viewSelector.addPokemons(pokemon)"></new-pokemon>
+  </section>
+</section>
