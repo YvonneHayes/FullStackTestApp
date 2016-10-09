@@ -6,7 +6,7 @@ import router from 'angular-ui-router';
 
 const app = angular.module('pokemonApp', [
   components,
-  router,
-  services]);
+  services,
+  router]);
 
 export default app;
