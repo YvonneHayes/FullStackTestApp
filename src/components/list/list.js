@@ -6,7 +6,7 @@ export default {
   controllerAs: 'list',
   bindings: {
     data: '<',
-    deleteImage: '&'
+    // deleteImage: '&'
   },
   controller() {
     this.styles = styles;

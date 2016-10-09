@@ -20,7 +20,7 @@ function controller (pokemonService) {
   this.styles = styles;
   this.submit = () => {
     let pokemon = this.pokemon;
-    console.log(pokemon, 'submit says this');
+    // console.log(pokemon, 'submit says this');
     this.add({pokemon});
     this.pokemon = {};
   };
